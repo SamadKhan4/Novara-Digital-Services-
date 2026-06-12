@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { Star } from 'lucide-react'
-import GlassCard from './GlassCard'
-import SectionBadge from './SectionBadge'
-import { testimonials } from '../data/siteData'
+import GlassCard from '../GlassCard'
+import SectionBadge from '../SectionBadge'
+import { testimonials } from '../../data/siteData'
 
 function TestimonialsSection() {
   return (

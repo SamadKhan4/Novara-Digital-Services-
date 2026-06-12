@@ -1,6 +1,10 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
-import Logo from './Logo'
-import { footerLinks, socialLinks } from '../data/siteData'
+import GlassCard from '../GlassCard'
+import Logo from '../Logo'
+import { footerLinks, socialLinks } from '../../data/siteData'
+
+const worldMapClass =
+  'pointer-events-none absolute bottom-[18px] right-5 h-[155px] w-[330px] opacity-[0.14] bg-[radial-gradient(circle_at_18%_42%,white_0_3px,transparent_4px),radial-gradient(circle_at_30%_35%,white_0_4px,transparent_5px),radial-gradient(circle_at_45%_48%,white_0_5px,transparent_6px),radial-gradient(circle_at_57%_39%,white_0_4px,transparent_5px),radial-gradient(circle_at_72%_52%,white_0_4px,transparent_5px),radial-gradient(circle_at_82%_33%,white_0_3px,transparent_4px),linear-gradient(rgba(255,255,255,0.28)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.28)_1px,transparent_1px)] bg-[length:100%_100%,100%_100%,100%_100%,100%_100%,100%_100%,100%_100%,24px_24px,24px_24px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]'
 
 function FooterColumn({ title, items }) {
   return (
@@ -25,8 +29,8 @@ function FooterColumn({ title, items }) {
 function Footer() {
   return (
     <footer className="relative z-10 mx-auto max-w-[1280px] px-5 pb-7 lg:px-8">
-      <div className="glass-card relative overflow-hidden p-7 lg:p-8">
-        <div className="world-map" />
+      <GlassCard className="overflow-hidden p-7 lg:p-8">
+        <div className={worldMapClass} />
         <div className="relative grid gap-9 md:grid-cols-[1.4fr_1fr_1.3fr_1fr]">
           <div>
             <Logo />
@@ -81,7 +85,7 @@ function Footer() {
             </a>
           </div>
         </div>
-      </div>
+      </GlassCard>
     </footer>
   )
 }

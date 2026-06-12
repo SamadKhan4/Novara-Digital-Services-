@@ -1,11 +1,18 @@
 import { ArrowRight } from 'lucide-react'
 
-function Button({ children, variant = 'primary', className = '', href = '#' }) {
+function Button({
+  children,
+  variant = 'primary',
+  className = '',
+  href = '#',
+  onClick,
+}) {
   const isPrimary = variant === 'primary'
 
   return (
     <a
       href={href}
+      onClick={onClick}
       className={`group inline-flex items-center justify-center gap-3 rounded-[16px] px-7 py-4 text-sm font-extrabold transition duration-300 ${
         isPrimary
           ? 'bg-gradient-to-r from-[#2F80FF] via-[#00A7FF] to-[#7C3AED] text-white shadow-[0_0_32px_rgba(47,128,255,0.45)] hover:-translate-y-1 hover:shadow-[0_0_46px_rgba(124,58,237,0.7)]'

@@ -26,13 +26,11 @@ import {
 } from "lucide-react";
 
 export const navLinks = [
-  "Home",
-  "Services",
-  "About Us",
-  "Portfolio",
-  "Process",
-  "Testimonials",
-  "Contact",
+  { label: "Home", path: "/" },
+  { label: "Services", path: "/services" },
+  { label: "About Us", path: "/about" },
+  { label: "Portfolio", path: "/portfolio" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export const trustItems = [
