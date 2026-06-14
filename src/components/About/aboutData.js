@@ -158,9 +158,16 @@ export const stats = [
 ]
 
 export const leaders = [
-  { name: 'Aarav Mehta', role: 'Founder & CEO', tone: 'from-cyan-300 to-blue-700' },
-  { name: 'Priya Sharma', role: 'Head of Strategy', tone: 'from-fuchsia-300 to-violet-800' },
-  { name: 'Rohan Verma', role: 'Head of Design', tone: 'from-sky-300 to-indigo-800' },
-  { name: 'Neha Iyer', role: 'Marketing Director', tone: 'from-violet-300 to-purple-900' },
-  { name: 'Vikram Singh', role: 'Head of Technology', tone: 'from-blue-300 to-violet-800' },
+  {
+    name: 'Samad Khan',
+    role: 'Software Developer',
+    tone: 'from-cyan-300 to-blue-700',
+    bio: 'Samad Khan is a detail-focused software developer who brings together clean code, modern UI thinking, and practical business understanding. He builds digital experiences that feel polished, perform smoothly, and help brands present themselves with confidence.',
+    highlights: [
+      'Modern web development',
+      'Clean user interface execution',
+      'Performance-focused builds',
+      'Reliable and growth-minded delivery',
+    ],
+  },
 ]
