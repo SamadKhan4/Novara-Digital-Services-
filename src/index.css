@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
   background: #050816;
 }
 
@@ -34,6 +35,36 @@ body {
 button,
 a {
   font: inherit;
+}
+
+::selection {
+  color: #ffffff;
+  background: rgba(0, 229, 255, 0.35);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #050816;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(0, 229, 255, 0.68), rgba(124, 58, 237, 0.72));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 h1,
