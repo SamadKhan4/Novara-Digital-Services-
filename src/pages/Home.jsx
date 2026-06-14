@@ -9,7 +9,7 @@ import CTASection from '../components/Home/CTASection'
 
 function Home() {
   return (
-    <>
+    <div className="grid gap-12 pb-8 sm:gap-14 lg:gap-16">
       <Hero />
       <IntroSection />
       <ServicesSection />
@@ -18,7 +18,7 @@ function Home() {
       <StatsSection />
       <TestimonialsSection />
       <CTASection />
-    </>
+    </div>
   )
 }
 

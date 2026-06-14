@@ -28,7 +28,7 @@ function LeaderCard({ leader }) {
 
 function AboutLeadership() {
   return (
-    <GlassCard className="mt-5 grid gap-5 p-5 lg:grid-cols-[0.9fr_4.1fr]">
+    <GlassCard className="grid gap-5 p-5 lg:grid-cols-[0.9fr_4.1fr]">
       <AboutSectionTitle
         eyebrow="Our Leadership"
         title="The Minds Behind Your Success"

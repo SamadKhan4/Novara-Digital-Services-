@@ -23,7 +23,7 @@ function Field({ label, placeholder, type = 'text', multiline = false }) {
 
 function ContactProjectBrief() {
   return (
-    <section id="contact-form" className="mt-6 grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
+    <section id="contact-form" className="grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
       <GlassCard className="p-5 sm:p-7" glow>
         <div className="mb-6">
           <p className="text-xs font-black uppercase tracking-[0.22em] text-[#8EA2FF]">

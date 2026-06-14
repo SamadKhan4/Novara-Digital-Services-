@@ -6,7 +6,7 @@ import { faqs } from './servicesData'
 
 function ServicesFAQ() {
   return (
-    <section className="mt-6">
+    <section>
       <ServicesSectionTitle>Frequently Asked Questions</ServicesSectionTitle>
       <div className="mt-3 grid gap-3 md:grid-cols-2">
         {faqs.map((faq) => (

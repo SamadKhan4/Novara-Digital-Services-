@@ -52,7 +52,7 @@ function PortfolioCard({ project, index }) {
 
 function PortfolioGrid() {
   return (
-    <section className="mt-4">
+    <section>
       <div className="mb-6 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.22em] text-[#8EA2FF]">

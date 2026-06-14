@@ -5,7 +5,7 @@ import { differentiators } from './aboutData'
 
 function AboutDifferentiators() {
   return (
-    <GlassCard className="mt-5 grid gap-5 p-5 lg:grid-cols-[0.92fr_4fr]">
+    <GlassCard className="grid gap-5 p-5 lg:grid-cols-[0.92fr_4fr]">
       <AboutSectionTitle
         eyebrow="Why Choose Novara"
         title="What Makes Us Different"

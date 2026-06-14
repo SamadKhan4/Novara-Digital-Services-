@@ -64,7 +64,7 @@ function WorkflowPanel() {
 
 function ServiceBreakdown() {
   return (
-    <section className="mt-6 grid gap-5 lg:grid-cols-[1fr_310px]">
+    <section className="grid gap-5 lg:grid-cols-[1fr_310px]">
       <div>
         <ServicesSectionTitle>In-Depth Service Breakdown</ServicesSectionTitle>
         <div className="mt-3 grid gap-3">

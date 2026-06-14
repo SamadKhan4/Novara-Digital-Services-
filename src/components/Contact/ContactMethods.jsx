@@ -3,7 +3,7 @@ import { contactMethods } from './contactData'
 
 function ContactMethods() {
   return (
-    <section className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {contactMethods.map((method) => {
         const Icon = method.icon
 

@@ -49,7 +49,7 @@ function PackageCard({ pack }) {
 
 function ServiceResultsPackages() {
   return (
-    <section className="mt-6 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+    <section className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
       <div>
         <ServicesSectionTitle>Why Our Services Deliver Results</ServicesSectionTitle>
         <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">

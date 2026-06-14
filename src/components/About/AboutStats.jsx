@@ -3,7 +3,7 @@ import { stats } from './aboutData'
 
 function AboutStats() {
   return (
-    <GlassCard className="mt-5 p-5">
+    <GlassCard className="p-5">
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
         {stats.map((item) => {
           const Icon = item.icon

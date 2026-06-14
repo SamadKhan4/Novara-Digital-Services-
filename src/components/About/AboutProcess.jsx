@@ -4,7 +4,7 @@ import { process } from './aboutData'
 
 function AboutProcess() {
   return (
-    <GlassCard className="mt-5 p-5">
+    <GlassCard className="p-5">
       <AboutSectionTitle eyebrow="Our Process" />
       <div className="relative mt-4 grid gap-5 lg:grid-cols-5">
         <div className="pointer-events-none absolute left-[10%] right-[10%] top-6 hidden h-px bg-cyan-300/70 shadow-[0_0_20px_rgba(0,229,255,0.7)] lg:block" />

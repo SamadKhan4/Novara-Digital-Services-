@@ -3,7 +3,7 @@ import GlassCard from '../GlassCard'
 
 function PortfolioCTA() {
   return (
-    <GlassCard className="mt-7 overflow-hidden p-5 sm:p-7" glow>
+    <GlassCard className="overflow-hidden p-5 sm:p-7" glow>
       <div className="relative grid items-center gap-5 md:grid-cols-[1fr_auto]">
         <div>
           <h2 className="text-2xl font-black tracking-[-0.03em] text-white sm:text-3xl">

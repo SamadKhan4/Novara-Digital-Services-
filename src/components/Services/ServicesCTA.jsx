@@ -5,7 +5,7 @@ import GlassCard from '../GlassCard'
 
 function ServicesCTA() {
   return (
-    <GlassCard className="mt-6 overflow-hidden p-5 sm:p-7" glow>
+    <GlassCard className="overflow-hidden p-5 sm:p-7" glow>
       <div className="relative grid items-center gap-5 md:grid-cols-[100px_1fr_auto]">
         <div className="grid h-20 w-20 place-items-center rounded-[18px] border border-cyan-300/20 bg-gradient-to-br from-cyan-300/18 to-violet-500/24 shadow-[0_0_30px_rgba(47,128,255,0.28)]">
           <Rocket className="h-11 w-11 text-cyan-300 drop-shadow-[0_0_16px_rgba(0,229,255,0.85)]" />

@@ -3,7 +3,7 @@ import { consultationSteps } from './contactData'
 
 function ContactConsultation() {
   return (
-    <section className="mt-6">
+    <section>
       <div className="mb-5">
         <p className="text-xs font-black uppercase tracking-[0.22em] text-[#8EA2FF]">
           What Happens Next

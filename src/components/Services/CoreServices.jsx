@@ -27,7 +27,7 @@ function CoreServiceCard({ service }) {
 
 function CoreServices() {
   return (
-    <section className="mt-2">
+    <section>
       <ServicesSectionTitle>Our Core Services</ServicesSectionTitle>
       <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         {coreServices.map((service) => (
