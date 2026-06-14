@@ -25,7 +25,7 @@ function ContactHero() {
           technology, and growth strategy.
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-          <Button href="mailto:hello@novaradigital.com">Email Your Project</Button>
+          <Button href="mailto:samad04.in@gmail.com">Email Your Project</Button>
           <Button href="#contact-form" variant="secondary">
             Fill Project Brief
           </Button>

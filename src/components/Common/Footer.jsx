@@ -61,11 +61,11 @@ function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-[#AAB2C8]">
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-cyan-300" />
-                +91 12345 67890
+                +91 9096345086
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-cyan-300" />
-                hello@novaradigital.com
+                samad04.in@gmail.com
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-cyan-300" />

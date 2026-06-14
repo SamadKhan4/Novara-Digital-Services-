@@ -14,7 +14,7 @@ function ContactCTA() {
             you see what to build next and what to avoid wasting time on.
           </p>
         </div>
-        <Button href="mailto:hello@novaradigital.com" className="md:px-9">
+        <Button href="mailto:samad04.in@gmail.com" className="md:px-9">
           Book a Free Consultation
         </Button>
       </div>

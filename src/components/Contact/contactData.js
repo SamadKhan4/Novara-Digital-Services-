@@ -15,13 +15,13 @@ export const contactMethods = [
   {
     title: 'Email Us',
     text: 'Send your project details and we will reply with the next best steps.',
-    value: 'hello@novaradigital.com',
+    value: 'samad04.in@gmail.com',
     icon: Mail,
   },
   {
     title: 'Call Us',
     text: 'Speak directly with our team for project fit and timelines.',
-    value: '+91 98765 43210',
+    value: '+91 9096345086',
     icon: Phone,
   },
   {

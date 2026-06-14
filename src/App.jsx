@@ -5,13 +5,24 @@ import AboutPage from './pages/AboutPage'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
-import ServiceDetail from './pages/ServiceDetail'
 import Services from './pages/Services'
+import BrandingIdentity from './pages/Services/BrandingIdentity'
+import BusinessAutomation from './pages/Services/BusinessAutomation'
+import SeoOnlineGrowth from './pages/Services/SeoOnlineGrowth'
+import SocialMediaMarketing from './pages/Services/SocialMediaMarketing'
+import UiUxDesign from './pages/Services/UiUxDesign'
+import WebsiteDevelopment from './pages/Services/WebsiteDevelopment'
 import { serviceDetails } from './components/Services/servicesData'
 
 const routes = {
   '/': Home,
   '/services': Services,
+  '/services/website-design-development': WebsiteDevelopment,
+  '/services/branding-identity': BrandingIdentity,
+  '/services/social-media-marketing': SocialMediaMarketing,
+  '/services/seo-online-growth': SeoOnlineGrowth,
+  '/services/business-automation': BusinessAutomation,
+  '/services/ui-ux-design': UiUxDesign,
   '/about': AboutPage,
   '/portfolio': Portfolio,
   '/contact': Contact,
@@ -32,10 +43,8 @@ const App = () => {
     : ''
 
   const Page = useMemo(() => {
-    if (serviceSlug && serviceDetails[serviceSlug]) return ServiceDetail
-
     return routes[currentPath] || Home
-  }, [currentPath, serviceSlug])
+  }, [currentPath])
 
   const handleNavigate = (path) => {
     if (path === currentPath) return
