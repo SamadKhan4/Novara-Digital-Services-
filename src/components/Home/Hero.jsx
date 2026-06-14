@@ -5,10 +5,10 @@ import {
   Sparkles,
 } from 'lucide-react'
 
-import Button from './Button'
-import GlassCard from './GlassCard'
-import SectionBadge from './SectionBadge'
-import { heroServices, trustItems } from '../data/siteData'
+import Button from '../Button'
+import GlassCard from '../GlassCard'
+import SectionBadge from '../SectionBadge'
+import { heroServices, trustItems } from '../../data/siteData'
 
 const cardPositions = {
   top: 'left-65 -top-3 -translate-x-1/2',

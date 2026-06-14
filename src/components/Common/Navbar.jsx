@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
-import Logo from '../Logo'
 import Button from '../Button'
+import WebLogo from '../../assets/Weblogo.png'
 import { navLinks } from '../../data/siteData'
 
 function Navbar({ currentPath = '/', onNavigate }) {
@@ -18,7 +18,26 @@ function Navbar({ currentPath = '/', onNavigate }) {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 py-4">
       <nav className="mx-auto flex max-w-[1280px] items-center justify-between rounded-[22px] border border-white/10 bg-[#050816]/58 px-4 py-3 shadow-[0_12px_50px_rgba(0,0,0,0.25)] backdrop-blur-2xl lg:px-7">
-        <Logo />
+        <a
+          href="/"
+          onClick={(event) => handleNavigate(event, '/')}
+          aria-label="Novara Digital Services home"
+          className="flex items-center gap-3"
+        >
+          <img
+            src={WebLogo}
+            alt="Novara Digital Services"
+            className="h-12 w-auto object-contain"
+          />
+          <span className="leading-none">
+            <span className="block text-2xl font-black tracking-[0.02em] text-white">
+              NOVARA
+            </span>
+            <span className="block text-[0.67rem] font-bold tracking-[0.32em] text-white/85">
+              DIGITAL SERVICES
+            </span>
+          </span>
+        </a>
         <div className="hidden items-center gap-9 lg:flex">
           {navLinks.map((link) => (
             <a

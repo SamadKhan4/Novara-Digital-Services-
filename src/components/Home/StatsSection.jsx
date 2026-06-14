@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import GlassCard from './GlassCard'
-import { stats } from '../data/siteData'
+import GlassCard from '../GlassCard'
+import { stats } from '../../data/siteData'
 
 function StatsSection() {
   return (

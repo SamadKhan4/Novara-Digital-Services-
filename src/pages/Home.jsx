@@ -1,13 +1,13 @@
-import Hero from '../components/Hero'
-import IntroSection from '../components/IntroSection'
-import ServicesSection from '../components/ServicesSection'
-import ProcessSection from '../components/ProcessSection'
-import PortfolioSection from '../components/PortfolioSection'
-import StatsSection from '../components/StatsSection'
+import Hero from '../components/Home/Hero'
+import IntroSection from '../components/Home/IntroSection'
+import ServicesSection from '../components/Home/ServicesSection'
+import ProcessSection from '../components/Home/ProcessSection'
+import PortfolioSection from '../components/Home/PortfolioSection'
+import StatsSection from '../components/Home/StatsSection'
 import TestimonialsSection from '../components/Common/TestimonialsSection'
-import CTASection from '../components/CTASection'
+import CTASection from '../components/Home/CTASection'
 
-function App() {
+function Home() {
   return (
     <>
       <Hero />
@@ -22,4 +22,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

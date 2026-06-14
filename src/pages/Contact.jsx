@@ -1,11 +1,7 @@
-import CTASection from '../components/CTASection'
+import ContactPageContent from '../components/Contact/ContactPageContent'
 
-const Contact = () => {
-  return (
-    <div className="pt-28">
-      <CTASection />
-    </div>
-  )
+function Contact() {
+  return <ContactPageContent />
 }
 
 export default Contact

@@ -1,13 +1,7 @@
-import PortfolioSection from '../components/PortfolioSection'
-import TestimonialsSection from '../components/Common/TestimonialsSection'
+import PortfolioPageContent from '../components/Portfolio/PortfolioPageContent'
 
-const Portfolio = () => {
-  return (
-    <div className="pt-28">
-      <PortfolioSection />
-      <TestimonialsSection />
-    </div>
-  )
+function Portfolio() {
+  return <PortfolioPageContent />
 }
 
 export default Portfolio

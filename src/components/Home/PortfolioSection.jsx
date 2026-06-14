@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import Button from './Button'
-import GlassCard from './GlassCard'
-import SectionBadge from './SectionBadge'
-import { portfolio } from '../data/siteData'
+import Button from '../Button'
+import GlassCard from '../GlassCard'
+import SectionBadge from '../SectionBadge'
+import { portfolio } from '../../data/siteData'
 
 const mockupBase =
   'relative h-[170px] overflow-hidden bg-[radial-gradient(circle_at_35%_20%,rgba(0,229,255,0.28),transparent_34%),radial-gradient(circle_at_75%_65%,rgba(124,58,237,0.34),transparent_36%),linear-gradient(135deg,#071127,#0b1024_56%,#10102b)] max-sm:h-[190px]'

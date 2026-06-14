@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import Button from './Button'
-import GlassCard from './GlassCard'
+import Button from '../Button'
+import GlassCard from '../GlassCard'
 
 function CTASection() {
   return (

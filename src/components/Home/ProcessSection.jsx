@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import Button from './Button'
-import GlassCard from './GlassCard'
-import SectionBadge from './SectionBadge'
-import { processSteps } from '../data/siteData'
+import Button from '../Button'
+import GlassCard from '../GlassCard'
+import SectionBadge from '../SectionBadge'
+import { processSteps } from '../../data/siteData'
 
 function ProcessSection() {
   return (

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import GlassCard from './GlassCard'
-import SectionBadge from './SectionBadge'
-import { introCards } from '../data/siteData'
+import GlassCard from '../GlassCard'
+import SectionBadge from '../SectionBadge'
+import { introCards } from '../../data/siteData'
 
 function IntroSection() {
   return (
