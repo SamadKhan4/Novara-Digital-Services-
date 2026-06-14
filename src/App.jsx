@@ -5,7 +5,9 @@ import AboutPage from './pages/AboutPage'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
+import ServiceDetail from './pages/ServiceDetail'
 import Services from './pages/Services'
+import { serviceDetails } from './components/Services/servicesData'
 
 const routes = {
   '/': Home,
@@ -25,7 +27,15 @@ const App = () => {
     return () => window.removeEventListener('popstate', syncPath)
   }, [])
 
-  const Page = useMemo(() => routes[currentPath] || Home, [currentPath])
+  const serviceSlug = currentPath.startsWith('/services/')
+    ? currentPath.replace('/services/', '')
+    : ''
+
+  const Page = useMemo(() => {
+    if (serviceSlug && serviceDetails[serviceSlug]) return ServiceDetail
+
+    return routes[currentPath] || Home
+  }, [currentPath, serviceSlug])
 
   const handleNavigate = (path) => {
     if (path === currentPath) return
@@ -42,8 +52,11 @@ const App = () => {
         <div className="absolute inset-0 opacity-65 [animation:starShift_18s_linear_infinite] bg-[radial-gradient(circle_at_8%_44%,rgba(0,229,255,0.45)_0_2px,transparent_3px),radial-gradient(circle_at_20%_70%,rgba(124,58,237,0.45)_0_2px,transparent_3px),radial-gradient(circle_at_84%_35%,rgba(255,255,255,0.5)_0_1px,transparent_2px),radial-gradient(circle_at_70%_58%,rgba(0,229,255,0.4)_0_1px,transparent_2px)] bg-[length:260px_220px]" />
       </div>
       <div className="pointer-events-none fixed inset-0 z-[1] bg-[radial-gradient(circle,rgba(255,255,255,0.75)_1px,transparent_1.5px),radial-gradient(circle,rgba(0,229,255,0.55)_1px,transparent_1.5px)] bg-[position:0_0,40px_70px] bg-[length:170px_170px,230px_230px] opacity-45" />
-      <Navbar currentPath={routes[currentPath] ? currentPath : '/'} onNavigate={handleNavigate} />
-      <Page />
+      <Navbar
+        currentPath={serviceSlug && serviceDetails[serviceSlug] ? '/services' : routes[currentPath] ? currentPath : '/'}
+        onNavigate={handleNavigate}
+      />
+      <Page slug={serviceSlug} />
       <Footer />
     </main>
   )

@@ -7,29 +7,33 @@ import { heroHighlights, orbitServices } from './servicesData'
 function OrbitCard({ icon: Icon, title, className }) {
   return (
     <GlassCard
-      className={`absolute z-20 grid h-[108px] w-[118px] place-items-center p-3 text-center max-sm:relative max-sm:left-auto max-sm:top-auto max-sm:h-full max-sm:w-full max-sm:translate-x-0 max-sm:translate-y-0 ${className}`}
+      className={`absolute z-20 grid h-[148px] w-[164px] place-items-center rounded-[24px] bg-[radial-gradient(circle_at_22%_15%,rgba(102,180,210,0.32),transparent_36%),linear-gradient(180deg,rgba(28,40,84,0.88),rgba(7,10,28,0.9))] p-5 text-center shadow-[0_0_34px_rgba(47,128,255,0.28),inset_0_1px_0_rgba(255,255,255,0.1)] max-sm:relative max-sm:left-auto max-sm:top-auto max-sm:h-full max-sm:w-full max-sm:translate-x-0 max-sm:translate-y-0 ${className}`}
       glow
     >
-      <Icon className="h-9 w-9 text-cyan-300 drop-shadow-[0_0_15px_rgba(0,229,255,0.9)]" />
-      <h3 className="text-xs font-black leading-tight text-white">{title}</h3>
+      <Icon className="h-11 w-11 text-cyan-300 drop-shadow-[0_0_15px_rgba(0,229,255,0.95)]" />
+      <h3 className="max-w-[130px] text-base font-black leading-[1.08] text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.45)]">
+        {title}
+      </h3>
     </GlassCard>
   )
 }
 
 function ServicesHeroGraphic() {
   return (
-    <div className="relative min-h-[500px] overflow-visible max-sm:grid max-sm:min-h-0 max-sm:grid-cols-2 max-sm:gap-3">
-      <div className="pointer-events-none absolute -right-28 top-10 h-[430px] w-[430px] rounded-[45%] bg-[radial-gradient(circle,rgba(100,80,255,0.9)_1px,transparent_1.6px)] bg-[length:13px_13px] opacity-45 [animation:waveDrift_10s_ease-in-out_infinite_alternate] [mask-image:radial-gradient(circle,black_0_54%,transparent_74%)] max-sm:hidden" />
-      <div className="absolute left-1/2 top-[43%] h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-300/35 shadow-[inset_0_0_38px_rgba(47,128,255,0.2),0_0_46px_rgba(47,128,255,0.24)] max-sm:hidden" />
-      <div className="absolute left-1/2 top-[43%] h-[250px] w-[250px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-400/55 shadow-[inset_0_0_35px_rgba(124,58,237,0.25),0_0_60px_rgba(124,58,237,0.3)] max-sm:hidden" />
-      <div className="absolute left-1/2 top-[43%] h-[145px] w-[145px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,229,255,0.28),transparent_65%)] blur-xl max-sm:hidden" />
-      <div className="absolute left-1/2 top-[43%] grid h-[132px] w-[132px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-[34px] border border-white/20 bg-[radial-gradient(circle_at_28%_20%,rgba(0,229,255,0.42),transparent_30%),radial-gradient(circle_at_75%_70%,rgba(139,92,246,0.55),transparent_34%),linear-gradient(135deg,rgba(47,128,255,0.75),rgba(124,58,237,0.72))] shadow-[0_0_42px_rgba(0,229,255,0.35),0_0_90px_rgba(124,58,237,0.48),inset_0_0_30px_rgba(255,255,255,0.12)] max-sm:hidden">
-        <span className="font-['Sora'] text-[6.5rem] font-black leading-none tracking-[-0.13em] text-white drop-shadow-[0_0_22px_rgba(0,229,255,0.8)]">
+    <div className="relative mx-auto min-h-[660px] w-full max-w-[720px] overflow-visible max-sm:grid max-sm:min-h-0 max-sm:grid-cols-2 max-sm:gap-3">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[length:64px_64px] opacity-45 max-sm:hidden" />
+      <div className="pointer-events-none absolute -right-16 bottom-20 h-[330px] w-[420px] bg-[radial-gradient(circle,rgba(47,128,255,0.85)_1.2px,transparent_1.8px)] bg-[length:14px_14px] opacity-50 [mask-image:radial-gradient(ellipse,black_0_44%,transparent_72%)] [transform:perspective(560px)_rotateX(58deg)_rotateZ(-8deg)] max-sm:hidden" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_28%,rgba(0,229,255,0.75)_0_2px,transparent_3px),radial-gradient(circle_at_82%_18%,rgba(255,255,255,0.45)_0_1px,transparent_2px),radial-gradient(circle_at_74%_84%,rgba(124,58,237,0.75)_0_2px,transparent_3px),radial-gradient(circle_at_12%_78%,rgba(0,229,255,0.55)_0_2px,transparent_3px)] bg-[length:150px_150px] opacity-55 max-sm:hidden" />
+
+      <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-500/55 shadow-[0_0_36px_rgba(47,128,255,0.3)] max-sm:hidden" />
+      <div className="absolute left-1/2 top-1/2 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/50 shadow-[0_0_44px_rgba(0,229,255,0.22)] max-sm:hidden" />
+      <div className="absolute left-1/2 top-1/2 h-[250px] w-[250px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-500/65 shadow-[0_0_54px_rgba(124,58,237,0.34)] max-sm:hidden" />
+      <div className="absolute left-1/2 top-1/2 h-[180px] w-[180px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(47,128,255,0.42),transparent_62%)] blur-xl max-sm:hidden" />
+      <div className="absolute left-1/2 top-1/2 grid h-[150px] w-[150px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-[36px] border border-white/14 bg-[radial-gradient(circle_at_22%_16%,rgba(0,229,255,0.22),transparent_32%),linear-gradient(135deg,rgba(26,44,103,0.94),rgba(20,25,70,0.95))] shadow-[0_0_44px_rgba(0,229,255,0.35),0_0_90px_rgba(47,128,255,0.45),inset_0_0_32px_rgba(255,255,255,0.08)] max-sm:hidden">
+        <span className="font-['Sora'] text-[6.6rem] font-black leading-none tracking-[-0.13em] text-white drop-shadow-[0_0_22px_rgba(0,229,255,0.65)]">
           N
         </span>
       </div>
-      <div className="pointer-events-none absolute inset-x-[10%] top-[43%] hidden h-px bg-gradient-to-r from-transparent via-cyan-300/70 to-transparent shadow-[0_0_18px_rgba(0,229,255,0.8)] lg:block" />
-      <div className="pointer-events-none absolute left-1/2 top-[43%] hidden h-[410px] w-px -translate-x-1/2 -translate-y-1/2 rotate-90 bg-gradient-to-b from-transparent via-violet-400/45 to-transparent lg:block" />
 
       {orbitServices.map((service) => (
         <OrbitCard key={service.title} {...service} />

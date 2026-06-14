@@ -22,34 +22,34 @@ import {
 
 export const orbitServices = [
   {
-    title: 'Website Design & Dev',
-    icon: MonitorCog,
-    className: 'left-1/2 top-[0%] -translate-x-1/2',
+    title: 'Website Development',
+    icon: Code2,
+    className: 'left-1/2 top-25 -translate-x-1/2',
   },
   {
     title: 'Branding & Identity',
     icon: PenTool,
-    className: 'left-[79%] top-[15%] -translate-x-1/2',
+    className: 'left-[84%] top-35 -translate-x-1/2 -translate-y-1/2',
   },
   {
     title: 'Social Media Marketing',
     icon: Megaphone,
-    className: 'left-[82%] top-[48%] -translate-x-1/2 -translate-y-1/2',
+    className: 'left-[16%] top-[34%] -translate-x-1/2 -translate-y-1/2',
   },
   {
     title: 'Business Automation',
     icon: Bot,
-    className: 'left-1/2 top-[74%] -translate-x-1/2',
+    className: 'left-[84%] top-30 -translate-x-1/2 -translate-y-1/2',
   },
   {
     title: 'SEO & Online Growth',
     icon: BarChart3,
-    className: 'left-[18%] top-[48%] -translate-x-1/2 -translate-y-1/2',
+    className: 'left-[16%] top-[66%] -translate-x-1/2 -translate-y-1/2',
   },
   {
     title: 'UI/UX Design',
     icon: Palette,
-    className: 'left-[21%] top-[15%] -translate-x-1/2',
+    className: 'left-1/2 top-[92%] -translate-x-1/2 -translate-y-full',
   },
 ]
 
@@ -62,35 +62,176 @@ export const heroHighlights = [
 export const coreServices = [
   {
     title: 'Website Design & Development',
+    slug: 'website-design-development',
     text: 'High-performance websites that are beautiful, responsive, and built to convert.',
     icon: MonitorCog,
   },
   {
     title: 'Branding & Identity',
+    slug: 'branding-identity',
     text: 'Memorable brand identities that connect, inspire, and set you apart.',
     icon: PenTool,
   },
   {
     title: 'Social Media Marketing',
+    slug: 'social-media-marketing',
     text: 'Creative strategies that grow your brand and engage your audience.',
     icon: Megaphone,
   },
   {
     title: 'SEO & Online Growth',
+    slug: 'seo-online-growth',
     text: 'Data-driven SEO strategies that boost rankings and drive organic growth.',
     icon: BarChart3,
   },
   {
     title: 'Business Automation',
+    slug: 'business-automation',
     text: 'Smart workflows and automations to save time, reduce costs, and increase efficiency.',
     icon: Bot,
   },
   {
     title: 'UI/UX Design',
+    slug: 'ui-ux-design',
     text: 'Clean, user-friendly experiences that improve engagement and conversions.',
     icon: MonitorCog,
   },
 ]
+
+export const serviceDetails = {
+  'website-design-development': {
+    title: 'Website Design & Development',
+    eyebrow: 'High-performance web experiences',
+    intro:
+      'We design and build modern websites that look premium, load fast, and guide visitors toward action.',
+    icon: MonitorCog,
+    outcomes: ['Stronger brand trust', 'More qualified enquiries', 'Faster user journeys'],
+    deliverables: [
+      'Responsive website design',
+      'Frontend development',
+      'CMS or custom setup',
+      'Speed and SEO foundation',
+      'Conversion-focused sections',
+      'Launch support',
+    ],
+    process: [
+      'Audit your goals, audience, and competitors',
+      'Create wireframes and visual direction',
+      'Build responsive pages with clean structure',
+      'Test performance, usability, and launch readiness',
+    ],
+  },
+  'branding-identity': {
+    title: 'Branding & Identity',
+    eyebrow: 'Memorable brand systems',
+    intro:
+      'We shape your brand into a consistent visual identity that feels credible, recognizable, and ready for growth.',
+    icon: PenTool,
+    outcomes: ['Clear market positioning', 'Consistent visual presence', 'Stronger brand recall'],
+    deliverables: [
+      'Logo direction',
+      'Color and typography system',
+      'Brand guidelines',
+      'Social and digital assets',
+      'Visual style direction',
+      'Launch-ready brand kit',
+    ],
+    process: [
+      'Understand your positioning and audience',
+      'Explore visual directions and moodboards',
+      'Design the identity system',
+      'Prepare guidelines and usable brand assets',
+    ],
+  },
+  'social-media-marketing': {
+    title: 'Social Media Marketing',
+    eyebrow: 'Growth-focused content systems',
+    intro:
+      'We plan and create social media campaigns that improve visibility, engagement, and trust across key platforms.',
+    icon: Megaphone,
+    outcomes: ['Consistent content presence', 'Higher engagement', 'Better campaign clarity'],
+    deliverables: [
+      'Content strategy',
+      'Monthly content calendar',
+      'Creative direction',
+      'Post and campaign concepts',
+      'Performance reporting',
+      'Optimization recommendations',
+    ],
+    process: [
+      'Define audience and content pillars',
+      'Plan campaigns around business goals',
+      'Create platform-ready content direction',
+      'Track performance and refine monthly',
+    ],
+  },
+  'seo-online-growth': {
+    title: 'SEO & Online Growth',
+    eyebrow: 'Search visibility that compounds',
+    intro:
+      'We improve your website structure, content, and search presence so customers can find you more easily.',
+    icon: BarChart3,
+    outcomes: ['Better organic visibility', 'Higher quality traffic', 'Long-term growth foundation'],
+    deliverables: [
+      'Keyword research',
+      'Technical SEO audit',
+      'On-page optimization',
+      'Content recommendations',
+      'Performance tracking',
+      'Growth reporting',
+    ],
+    process: [
+      'Audit current rankings and site health',
+      'Map keywords to business intent',
+      'Optimize pages and technical structure',
+      'Review progress and improve continuously',
+    ],
+  },
+  'business-automation': {
+    title: 'Business Automation',
+    eyebrow: 'Systems that save time',
+    intro:
+      'We connect your tools and automate repeated workflows so your team spends less time on manual tasks.',
+    icon: Bot,
+    outcomes: ['Reduced manual work', 'Cleaner lead handling', 'Better operational visibility'],
+    deliverables: [
+      'Workflow mapping',
+      'CRM and tool integrations',
+      'Lead capture automation',
+      'Notification flows',
+      'Reporting dashboards',
+      'Testing and documentation',
+    ],
+    process: [
+      'Identify repetitive tasks and bottlenecks',
+      'Map the automation journey',
+      'Build and connect the workflows',
+      'Test reliability and train your team',
+    ],
+  },
+  'ui-ux-design': {
+    title: 'UI/UX Design',
+    eyebrow: 'Interfaces users understand fast',
+    intro:
+      'We create intuitive digital interfaces that help users move clearly, confidently, and comfortably.',
+    icon: Palette,
+    outcomes: ['Better usability', 'Cleaner product flows', 'More confident users'],
+    deliverables: [
+      'User flow planning',
+      'Wireframes',
+      'High-fidelity UI design',
+      'Clickable prototypes',
+      'Design system basics',
+      'Developer-ready handoff',
+    ],
+    process: [
+      'Understand users and key tasks',
+      'Structure flows and wireframes',
+      'Design polished interface screens',
+      'Refine with usability and business feedback',
+    ],
+  },
+}
 
 export const serviceBreakdown = [
   {
@@ -261,10 +402,34 @@ export const packages = [
 ]
 
 export const faqs = [
-  'What services do you offer?',
-  'How long does a typical project take?',
-  'Will my website be mobile-friendly?',
-  'Do you offer ongoing support?',
-  'Can you work with existing websites or brands?',
-  'How do we get started?',
+  {
+    question: 'What services do you offer?',
+    answer:
+      'We offer website design and development, branding, social media marketing, SEO, business automation, and UI/UX design.',
+  },
+  {
+    question: 'How long does a typical project take?',
+    answer:
+      'Most small projects take 2-4 weeks. Larger websites, automation systems, or full brand projects can take 4-8 weeks depending on scope.',
+  },
+  {
+    question: 'Will my website be mobile-friendly?',
+    answer:
+      'Yes. Every website we build is responsive, fast, and designed to work smoothly across mobile, tablet, and desktop screens.',
+  },
+  {
+    question: 'Do you offer ongoing support?',
+    answer:
+      'Yes. We can support updates, maintenance, performance improvements, SEO, content changes, and ongoing digital growth work.',
+  },
+  {
+    question: 'Can you work with existing websites or brands?',
+    answer:
+      'Yes. We can improve, redesign, optimize, or extend your existing website or brand system without forcing you to start from zero.',
+  },
+  {
+    question: 'How do we get started?',
+    answer:
+      'Contact us with your goals, timeline, and current challenges. We will review your needs and suggest the best next step.',
+  },
 ]
